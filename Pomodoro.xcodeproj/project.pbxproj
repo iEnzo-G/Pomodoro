@@ -11,6 +11,10 @@
 		54B112C329EFE95600CD759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112C229EFE95600CD759D /* ContentView.swift */; };
 		54B112C529EFE95700CD759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B112C429EFE95700CD759D /* Assets.xcassets */; };
 		54B112C829EFE95700CD759D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B112C729EFE95700CD759D /* Preview Assets.xcassets */; };
+		54B112D329EFEB9900CD759D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D229EFEB9900CD759D /* StatsView.swift */; };
+		54B112D529EFEBB400CD759D /* StatsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D429EFEBB400CD759D /* StatsRow.swift */; };
+		54B112D729EFEBCF00CD759D /* SaveSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D629EFEBCF00CD759D /* SaveSessionView.swift */; };
+		54B112D929EFEBE600CD759D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D829EFEBE600CD759D /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		54B112C229EFE95600CD759D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54B112C429EFE95700CD759D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54B112C729EFE95700CD759D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54B112D229EFEB9900CD759D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		54B112D429EFEBB400CD759D /* StatsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRow.swift; sourceTree = "<group>"; };
+		54B112D629EFEBCF00CD759D /* SaveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSessionView.swift; sourceTree = "<group>"; };
+		54B112D829EFEBE600CD759D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				54B112C029EFE95600CD759D /* PomodoroApp.swift */,
-				54B112C229EFE95600CD759D /* ContentView.swift */,
+				54B112CE29EFEB1F00CD759D /* View */,
+				54B112D129EFEB6600CD759D /* Model */,
 				54B112C429EFE95700CD759D /* Assets.xcassets */,
 				54B112C629EFE95700CD759D /* Preview Content */,
 			);
@@ -65,6 +74,42 @@
 				54B112C729EFE95700CD759D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54B112CE29EFEB1F00CD759D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54B112D029EFEB5600CD759D /* Ressources */,
+				54B112CF29EFEB4200CD759D /* Stats */,
+				54B112C229EFE95600CD759D /* ContentView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		54B112CF29EFEB4200CD759D /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				54B112D229EFEB9900CD759D /* StatsView.swift */,
+				54B112D429EFEBB400CD759D /* StatsRow.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		54B112D029EFEB5600CD759D /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				54B112D629EFEBCF00CD759D /* SaveSessionView.swift */,
+				54B112D829EFEBE600CD759D /* TimerView.swift */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		54B112D129EFEB6600CD759D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B112D929EFEBE600CD759D /* TimerView.swift in Sources */,
+				54B112D529EFEBB400CD759D /* StatsRow.swift in Sources */,
 				54B112C329EFE95600CD759D /* ContentView.swift in Sources */,
+				54B112D729EFEBCF00CD759D /* SaveSessionView.swift in Sources */,
 				54B112C129EFE95600CD759D /* PomodoroApp.swift in Sources */,
+				54B112D329EFEB9900CD759D /* StatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
