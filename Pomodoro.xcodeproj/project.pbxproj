@@ -17,6 +17,9 @@
 		54B112D929EFEBE600CD759D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D829EFEBE600CD759D /* TimerView.swift */; };
 		54B112DB29EFED8A00CD759D /* SessionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112DA29EFED8A00CD759D /* SessionStruct.swift */; };
 		54B112DD29EFED9D00CD759D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112DC29EFED9D00CD759D /* TimerModel.swift */; };
+		54B112E129EFEDF500CD759D /* Pomodoro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54B112DF29EFEDF500CD759D /* Pomodoro.xcdatamodeld */; };
+		54B112E329EFEE2A00CD759D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112E229EFEE2A00CD759D /* CoreDataStack.swift */; };
+		54B112E529EFEE3800CD759D /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112E429EFEE3800CD759D /* CoreDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		54B112D829EFEBE600CD759D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		54B112DA29EFED8A00CD759D /* SessionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStruct.swift; sourceTree = "<group>"; };
 		54B112DC29EFED9D00CD759D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		54B112E029EFEDF500CD759D /* Pomodoro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pomodoro.xcdatamodel; sourceTree = "<group>"; };
+		54B112E229EFEE2A00CD759D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../../../../../../../Downloads/CoreDataStack.swift; sourceTree = "<group>"; };
+		54B112E429EFEE3800CD759D /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				54B112C029EFE95600CD759D /* PomodoroApp.swift */,
 				54B112CE29EFEB1F00CD759D /* View */,
 				54B112D129EFEB6600CD759D /* Model */,
+				54B112DE29EFEDD600CD759D /* CoreData */,
 				54B112C429EFE95700CD759D /* Assets.xcassets */,
 				54B112C629EFE95700CD759D /* Preview Content */,
 			);
@@ -116,6 +123,16 @@
 			);
 			name = Model;
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		54B112DE29EFEDD600CD759D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				54B112DF29EFEDF500CD759D /* Pomodoro.xcdatamodeld */,
+				54B112E229EFEE2A00CD759D /* CoreDataStack.swift */,
+				54B112E429EFEE3800CD759D /* CoreDataStore.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,10 @@
 				54B112D929EFEBE600CD759D /* TimerView.swift in Sources */,
 				54B112D529EFEBB400CD759D /* StatsRow.swift in Sources */,
 				54B112C329EFE95600CD759D /* ContentView.swift in Sources */,
+				54B112E529EFEE3800CD759D /* CoreDataStore.swift in Sources */,
+				54B112E129EFEDF500CD759D /* Pomodoro.xcdatamodeld in Sources */,
 				54B112D729EFEBCF00CD759D /* SaveSessionView.swift in Sources */,
+				54B112E329EFEE2A00CD759D /* CoreDataStack.swift in Sources */,
 				54B112C129EFE95600CD759D /* PomodoroApp.swift in Sources */,
 				54B112DD29EFED9D00CD759D /* TimerModel.swift in Sources */,
 				54B112D329EFEB9900CD759D /* StatsView.swift in Sources */,
@@ -396,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54B112DF29EFEDF500CD759D /* Pomodoro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54B112E029EFEDF500CD759D /* Pomodoro.xcdatamodel */,
+			);
+			currentVersion = 54B112E029EFEDF500CD759D /* Pomodoro.xcdatamodel */;
+			path = Pomodoro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 54B112B529EFE95600CD759D /* Project object */;
 }
