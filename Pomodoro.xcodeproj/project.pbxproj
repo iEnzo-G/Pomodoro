@@ -15,6 +15,8 @@
 		54B112D529EFEBB400CD759D /* StatsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D429EFEBB400CD759D /* StatsRow.swift */; };
 		54B112D729EFEBCF00CD759D /* SaveSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D629EFEBCF00CD759D /* SaveSessionView.swift */; };
 		54B112D929EFEBE600CD759D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112D829EFEBE600CD759D /* TimerView.swift */; };
+		54B112DB29EFED8A00CD759D /* SessionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112DA29EFED8A00CD759D /* SessionStruct.swift */; };
+		54B112DD29EFED9D00CD759D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112DC29EFED9D00CD759D /* TimerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		54B112D429EFEBB400CD759D /* StatsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRow.swift; sourceTree = "<group>"; };
 		54B112D629EFEBCF00CD759D /* SaveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSessionView.swift; sourceTree = "<group>"; };
 		54B112D829EFEBE600CD759D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		54B112DA29EFED8A00CD759D /* SessionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStruct.swift; sourceTree = "<group>"; };
+		54B112DC29EFED9D00CD759D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		54B112D129EFEB6600CD759D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54B112DA29EFED8A00CD759D /* SessionStruct.swift */,
+				54B112DC29EFED9D00CD759D /* TimerModel.swift */,
 			);
 			name = Model;
 			path = Ressources;
@@ -187,7 +193,9 @@
 				54B112C329EFE95600CD759D /* ContentView.swift in Sources */,
 				54B112D729EFEBCF00CD759D /* SaveSessionView.swift in Sources */,
 				54B112C129EFE95600CD759D /* PomodoroApp.swift in Sources */,
+				54B112DD29EFED9D00CD759D /* TimerModel.swift in Sources */,
 				54B112D329EFEB9900CD759D /* StatsView.swift in Sources */,
+				54B112DB29EFED8A00CD759D /* SessionStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
