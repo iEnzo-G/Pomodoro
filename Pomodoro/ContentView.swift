@@ -1,26 +1,34 @@
-//
-//  ContentView.swift
-//  Pomodoro
-//
-//  Created by Enzo Gammino on 19/04/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            ZStack {
+                Color(CGColor(red: 0.3, green: 0.45, blue: 0.65, alpha: 1))
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    TimerView()
+                }
+            }.tabItem {
+                Label("Pomm'doro", systemImage: "stopwatch")
+            }
+            ZStack {
+                Color(CGColor(red: 0.3, green: 0.45, blue: 0.65, alpha: 1))
+                    .edgesIgnoringSafeArea(.all)
+                StatsView()
+            }.tabItem {
+                Label("Statistiques", systemImage: "chart.line.uptrend.xyaxis")
+            }
         }
-        .padding()
+        .accentColor(.white)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(["iPhone 14 Pro", "iPhone SE (3rd generation)"], id: \.self) { deviceName in
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+        }
     }
 }
