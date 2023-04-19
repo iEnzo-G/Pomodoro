@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "8C6CEF38-8C6C-47D7-9937-82CD53D133AD",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Pomodoro.xcodeproj",
+      "identifier" : "54B112BC29EFE95600CD759D",
+      "name" : "Pomodoro"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Pomodoro.xcodeproj",
+        "identifier" : "54B112E929EFEE9600CD759D",
+        "name" : "PomodoroTests"
+      }
+    }
+  ],
+  "version" : 1
+}
