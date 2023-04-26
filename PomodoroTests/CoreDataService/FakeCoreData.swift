@@ -1,4 +1,5 @@
 import XCTest
+import FirebaseAnalytics
 import CoreData
 @testable import Pomodoro
 
