@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5416438A29F2FA7900EE4C61 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416438929F2FA7900EE4C61 /* CoreDataStack.swift */; };
-		542E69E529F9D801001EB465 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542E69E429F9D801001EB465 /* FirebaseAnalytics.xcframework */; };
-		542E69E629F9D801001EB465 /* FirebaseAnalytics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 542E69E429F9D801001EB465 /* FirebaseAnalytics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54B112C129EFE95600CD759D /* PomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112C029EFE95600CD759D /* PomodoroApp.swift */; };
 		54B112C329EFE95600CD759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112C229EFE95600CD759D /* ContentView.swift */; };
 		54B112C529EFE95700CD759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B112C429EFE95700CD759D /* Assets.xcassets */; };
@@ -27,8 +25,8 @@
 		54B112FA29EFEF2500CD759D /* CoreDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112F929EFEF2500CD759D /* CoreDataStoreTests.swift */; };
 		54B112FC29EFEFB700CD759D /* ButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B112FB29EFEFB700CD759D /* ButtonShape.swift */; };
 		54C18E2E29EFF7BB00A02199 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C18E2D29EFF7BB00A02199 /* GoogleService-Info.plist */; };
-		98B3092356CD6AF981B27CBA /* Pods_PomodoroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7EEB4620CF637FDBA03F57 /* Pods_PomodoroTests.framework */; };
-		ED2E2D8893EEF70BAAC525EE /* Pods_Pomodoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D25310E11C0DC4446B716 /* Pods_Pomodoro.framework */; };
+		914BE44C377F16604A0D3D2B /* Pods_Pomodoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DDE015CBB9076C338CEF00 /* Pods_Pomodoro.framework */; };
+		CDFDA7845B70C3080C99FCA8 /* Pods_PomodoroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42623CCE1AF3D0B1E020C9C1 /* Pods_PomodoroTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,24 +39,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		542E69E729F9D801001EB465 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				542E69E629F9D801001EB465 /* FirebaseAnalytics.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0E0C2C3848628DEAA29AEF8E /* Pods-Pomodoro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro.release.xcconfig"; path = "Target Support Files/Pods-Pomodoro/Pods-Pomodoro.release.xcconfig"; sourceTree = "<group>"; };
-		1B3D25310E11C0DC4446B716 /* Pods_Pomodoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7EEB4620CF637FDBA03F57 /* Pods_PomodoroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomodoroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42623CCE1AF3D0B1E020C9C1 /* Pods_PomodoroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomodoroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5416438929F2FA7900EE4C61 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		542E69E429F9D801001EB465 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		54B112BD29EFE95600CD759D /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,9 +63,11 @@
 		54B112FB29EFEFB700CD759D /* ButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShape.swift; sourceTree = "<group>"; };
 		54B112FD29EFF0D300CD759D /* Pomodoro.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pomodoro.xctestplan; sourceTree = "<group>"; };
 		54C18E2D29EFF7BB00A02199 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ACA8F7CF20FAA9FD03ED504A /* Pods-Pomodoro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro.debug.xcconfig"; path = "Target Support Files/Pods-Pomodoro/Pods-Pomodoro.debug.xcconfig"; sourceTree = "<group>"; };
-		DF0D0BAB97C8F1574ED0A8E6 /* Pods-PomodoroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTests.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTests/Pods-PomodoroTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E9A5DFAC774DDE3005E83409 /* Pods-PomodoroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTests.release.xcconfig"; path = "Target Support Files/Pods-PomodoroTests/Pods-PomodoroTests.release.xcconfig"; sourceTree = "<group>"; };
+		80DDE015CBB9076C338CEF00 /* Pods_Pomodoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06B5F88521A1CB6C89ABD0B /* Pods-Pomodoro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro.release.xcconfig"; path = "Target Support Files/Pods-Pomodoro/Pods-Pomodoro.release.xcconfig"; sourceTree = "<group>"; };
+		CC78CA4C59EACEC1F90568A0 /* Pods-PomodoroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTests.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTests/Pods-PomodoroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB721CA477057804A846B575 /* Pods-Pomodoro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro.debug.xcconfig"; path = "Target Support Files/Pods-Pomodoro/Pods-Pomodoro.debug.xcconfig"; sourceTree = "<group>"; };
+		FCAE73799D0637C3A0520F99 /* Pods-PomodoroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTests.release.xcconfig"; path = "Target Support Files/Pods-PomodoroTests/Pods-PomodoroTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542E69E529F9D801001EB465 /* FirebaseAnalytics.xcframework in Frameworks */,
-				ED2E2D8893EEF70BAAC525EE /* Pods_Pomodoro.framework in Frameworks */,
+				914BE44C377F16604A0D3D2B /* Pods_Pomodoro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B3092356CD6AF981B27CBA /* Pods_PomodoroTests.framework in Frameworks */,
+				CDFDA7845B70C3080C99FCA8 /* Pods_PomodoroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +93,10 @@
 		1FE5CE69381A20D5442B5CAD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ACA8F7CF20FAA9FD03ED504A /* Pods-Pomodoro.debug.xcconfig */,
-				0E0C2C3848628DEAA29AEF8E /* Pods-Pomodoro.release.xcconfig */,
-				DF0D0BAB97C8F1574ED0A8E6 /* Pods-PomodoroTests.debug.xcconfig */,
-				E9A5DFAC774DDE3005E83409 /* Pods-PomodoroTests.release.xcconfig */,
+				DB721CA477057804A846B575 /* Pods-Pomodoro.debug.xcconfig */,
+				C06B5F88521A1CB6C89ABD0B /* Pods-Pomodoro.release.xcconfig */,
+				CC78CA4C59EACEC1F90568A0 /* Pods-PomodoroTests.debug.xcconfig */,
+				FCAE73799D0637C3A0520F99 /* Pods-PomodoroTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -240,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				542E69E429F9D801001EB465 /* FirebaseAnalytics.xcframework */,
-				1B3D25310E11C0DC4446B716 /* Pods_Pomodoro.framework */,
-				1E7EEB4620CF637FDBA03F57 /* Pods_PomodoroTests.framework */,
+				80DDE015CBB9076C338CEF00 /* Pods_Pomodoro.framework */,
+				42623CCE1AF3D0B1E020C9C1 /* Pods_PomodoroTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,12 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B112CB29EFE95700CD759D /* Build configuration list for PBXNativeTarget "Pomodoro" */;
 			buildPhases = (
-				D0A8EEDD88A3F2DC3787C0F5 /* [CP] Check Pods Manifest.lock */,
+				577DE0D2C74C11581E209C14 /* [CP] Check Pods Manifest.lock */,
 				54B112B929EFE95600CD759D /* Sources */,
 				54B112BA29EFE95600CD759D /* Frameworks */,
 				54B112BB29EFE95600CD759D /* Resources */,
-				542E69E729F9D801001EB465 /* Embed Frameworks */,
-				0FA9C8BE5C32E7D98BBDC277 /* [CP] Embed Pods Frameworks */,
+				030913FA9B5B951B230AEA95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,11 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B112F029EFEE9600CD759D /* Build configuration list for PBXNativeTarget "PomodoroTests" */;
 			buildPhases = (
-				04F546845DDE7C0C57E2BE4D /* [CP] Check Pods Manifest.lock */,
+				4033658246CFD2A528335C4A /* [CP] Check Pods Manifest.lock */,
 				54B112E629EFEE9600CD759D /* Sources */,
 				54B112E729EFEE9600CD759D /* Frameworks */,
 				54B112E829EFEE9600CD759D /* Resources */,
-				7CCA66E3C0F353E700BBE448 /* [CP] Embed Pods Frameworks */,
+				52C53CEA91CC88F22F3E0AAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,7 +330,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04F546845DDE7C0C57E2BE4D /* [CP] Check Pods Manifest.lock */ = {
+		030913FA9B5B951B230AEA95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4033658246CFD2A528335C4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,24 +369,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0FA9C8BE5C32E7D98BBDC277 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomodoro/Pods-Pomodoro-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7CCA66E3C0F353E700BBE448 /* [CP] Embed Pods Frameworks */ = {
+		52C53CEA91CC88F22F3E0AAD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,7 +386,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PomodoroTests/Pods-PomodoroTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D0A8EEDD88A3F2DC3787C0F5 /* [CP] Check Pods Manifest.lock */ = {
+		577DE0D2C74C11581E209C14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -585,7 +567,7 @@
 		};
 		54B112CC29EFE95700CD759D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACA8F7CF20FAA9FD03ED504A /* Pods-Pomodoro.debug.xcconfig */;
+			baseConfigurationReference = DB721CA477057804A846B575 /* Pods-Pomodoro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -621,7 +603,7 @@
 		};
 		54B112CD29EFE95700CD759D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E0C2C3848628DEAA29AEF8E /* Pods-Pomodoro.release.xcconfig */;
+			baseConfigurationReference = C06B5F88521A1CB6C89ABD0B /* Pods-Pomodoro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -657,7 +639,7 @@
 		};
 		54B112F129EFEE9600CD759D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF0D0BAB97C8F1574ED0A8E6 /* Pods-PomodoroTests.debug.xcconfig */;
+			baseConfigurationReference = CC78CA4C59EACEC1F90568A0 /* Pods-PomodoroTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -680,7 +662,7 @@
 		};
 		54B112F229EFEE9600CD759D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9A5DFAC774DDE3005E83409 /* Pods-PomodoroTests.release.xcconfig */;
+			baseConfigurationReference = FCAE73799D0637C3A0520F99 /* Pods-PomodoroTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

@@ -10,7 +10,7 @@ struct ContentView: View {
                     TimerView()
                 }
             }.tabItem {
-                Label("Pomm'doro", systemImage: "stopwatch")
+                Label("Pomodoro", systemImage: "stopwatch")
             }
             ZStack {
                 Color(CGColor(red: 0.3, green: 0.45, blue: 0.65, alpha: 1))

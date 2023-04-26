@@ -525,7 +525,7 @@
 /* Begin PBXFileReference section */
 		0022173E6FF795EF22022DC8F0650097 /* FirebaseCoreInternal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCoreInternal-umbrella.h"; sourceTree = "<group>"; };
 		00BEACD670AC00C828C54CD6260123BA /* GULNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULNSData+zlib.h"; path = "GoogleUtilities/NSData+zlib/Public/GoogleUtilities/GULNSData+zlib.h"; sourceTree = "<group>"; };
-		00DF4D8F2512193D091E345FF4541D4F /* Pods_PomodoroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomodoroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF4D8F2512193D091E345FF4541D4F /* Pods-PomodoroTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PomodoroTests"; path = Pods_PomodoroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		025736A827896156E92D5EE3A61C8461 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
 		0316344A9238301DBA3BECB4CF329FC3 /* Pods-Pomodoro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pomodoro-dummy.m"; sourceTree = "<group>"; };
 		03422CCD62E6DF8E9B73DE1DB6C8B5FB /* FirebaseCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCore.release.xcconfig; sourceTree = "<group>"; };
@@ -705,7 +705,7 @@
 		A3D99530BF00849C289672C5C9E30FC9 /* GoogleAppMeasurement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAppMeasurement.release.xcconfig; sourceTree = "<group>"; };
 		A5122391A947609213945905A8BF9185 /* FIRInstallationsItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsItem.m; path = FirebaseInstallations/Source/Library/FIRInstallationsItem.m; sourceTree = "<group>"; };
 		A5B44728FBF1CBF947D57300D221A3CF /* FIRInstallationsSingleOperationPromiseCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsSingleOperationPromiseCache.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.m; sourceTree = "<group>"; };
-		A6E732593E2A472E90508E423890E4F5 /* Pods_Pomodoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E732593E2A472E90508E423890E4F5 /* Pods-Pomodoro */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pomodoro"; path = Pods_Pomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72B035E4542BCDC0651504D5806644D /* FIRComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainer.h; path = FirebaseCore/Extension/FIRComponentContainer.h; sourceTree = "<group>"; };
 		A74E0BA558B88497736E0C54802984F4 /* RingBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RingBuffer.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift; sourceTree = "<group>"; };
 		A7E7BF4F75F813F1B1B5118B23C3DB13 /* FirebaseCoreInternal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCoreInternal.release.xcconfig; sourceTree = "<group>"; };
@@ -1064,8 +1064,8 @@
 				13C8C8B254851998F9289F71229B28A2 /* FirebaseInstallations.framework */,
 				B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities.framework */,
 				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */,
-				A6E732593E2A472E90508E423890E4F5 /* Pods_Pomodoro.framework */,
-				00DF4D8F2512193D091E345FF4541D4F /* Pods_PomodoroTests.framework */,
+				A6E732593E2A472E90508E423890E4F5 /* Pods-Pomodoro */,
+				00DF4D8F2512193D091E345FF4541D4F /* Pods-PomodoroTests */,
 				3347A1AB6546F0A3977529B8F199DC41 /* FBLPromises.framework */,
 			);
 			name = Products;
@@ -1759,7 +1759,7 @@
 			);
 			name = "Pods-Pomodoro";
 			productName = Pods_Pomodoro;
-			productReference = A6E732593E2A472E90508E423890E4F5 /* Pods_Pomodoro.framework */;
+			productReference = A6E732593E2A472E90508E423890E4F5 /* Pods-Pomodoro */;
 			productType = "com.apple.product-type.framework";
 		};
 		87803597EB3F20FC46472B85392EC4FD /* FirebaseInstallations */ = {
@@ -1827,7 +1827,7 @@
 			);
 			name = "Pods-PomodoroTests";
 			productName = Pods_PomodoroTests;
-			productReference = 00DF4D8F2512193D091E345FF4541D4F /* Pods_PomodoroTests.framework */;
+			productReference = 00DF4D8F2512193D091E345FF4541D4F /* Pods-PomodoroTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		D2B5E7DCCBBFB32341D857D01211A1A3 /* nanopb */ = {

@@ -12,7 +12,7 @@ struct StatsList: View {
         return hoursFormatter
     }
     
-    func groupSessionsByTitle(sessions: [Session]) -> [[Session]] {
+    private func groupSessionsByTitle(sessions: [Session]) -> [[Session]] {
         let groupedSessions = sessions.reduce(into: [[Session]]()) { (result, session) in
             let title = session.title
             if let index = result.firstIndex(where: { $0.first?.title == title }) {
@@ -49,16 +49,17 @@ struct StatsList: View {
         }
     }
     
-    func deleteSession(at offsets: IndexSet, sectionIndex: Int) {
+    private func deleteSession(at offsets: IndexSet, sectionIndex: Int) {
         for offset in offsets {
             let sessionToDelete = mergedSessions[sectionIndex][offset]
             mergedSessions[sectionIndex].remove(at: offset)
             coreDataStore.deleteSession(sessionToDelete)
             sessions = coreDataStore.getSessions()
+            Analytics.logEvent("delete_session", parameters: nil)
         }
     }
     
-    func getSectionTitle(for sessions: [Session]) -> String {
+    private func getSectionTitle(for sessions: [Session]) -> String {
         guard let title = sessions.first?.title else { return ""}
         return title
     }
