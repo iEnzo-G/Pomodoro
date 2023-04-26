@@ -1,4 +1,5 @@
 import SwiftUI
+import FirebaseAnalytics
 
 struct StatsRow: View {
     
@@ -34,6 +35,7 @@ struct StatsRow: View {
                         Text("\(sessions[0].workTime / 60) min")
                             .font(.custom("Avenir Next", size: 20))
                         Button("X") {
+//                            Analytics.logEvent("delete_session", parameters: nil)
                             coreDataStore.deleteSession(sessions[0])
                         }
                         .foregroundColor(.red)

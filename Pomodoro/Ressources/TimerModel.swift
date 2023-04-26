@@ -45,7 +45,7 @@ class TimerModel : ObservableObject {
     func restartTimer() {
         timerCancellable?.cancel()
         timerInProgress = false
-        workTime = isWorkTimer == true ? 1500 : 300
+        workTime = 1500
     }
     
     func changeTimer() {

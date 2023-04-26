@@ -2,6 +2,7 @@ import XCTest
 import Combine
 @testable import Pomodoro
 
+
 final class TimerServiceTests: XCTestCase {
     
     func test_GivenTimer_WhenTimerIsNotRunning_ThenTimerStarts() {

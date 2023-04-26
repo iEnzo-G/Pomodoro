@@ -1,13 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "AlOnuCPndF9WxEwXUCidg5yewg0QJoG7y-QOEqnU-XMyq-Yy0z6XiJIOMN25cJvy0zc-2 1.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
-    },
-    {
-      "filename" : "AlOnuCPndF9WxEwXUCidg5yewg0QJoG7y-QOEqnU-XMyq-Yy0z6XiJIOMN25cJvy0zc-2.png",
+      "filename" : "appicon.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

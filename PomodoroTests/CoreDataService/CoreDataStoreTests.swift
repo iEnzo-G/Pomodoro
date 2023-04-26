@@ -1,6 +1,7 @@
 import XCTest
 @testable import Pomodoro
 
+
 final class CoreDataStoreTests: XCTestCase {
     
     func test_GivenSession_WhenTimerIsFinish_ThenSaveSessionInCoreData() {
