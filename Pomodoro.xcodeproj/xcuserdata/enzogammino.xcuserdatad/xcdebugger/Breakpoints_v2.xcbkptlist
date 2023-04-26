@@ -3,4 +3,195 @@
    uuid = "A0BEC14A-0FD0-40C4-B5D1-A92F3BB26308"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0510FBAD-2749-4702-8E3C-BBD7F6B02E99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pomodoro/Stats/StatsList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "deleteSession(at:sectionIndex:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0510FBAD-2749-4702-8E3C-BBD7F6B02E99 - ab56b2fbfb403d77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "0510FBAD-2749-4702-8E3C-BBD7F6B02E99 - ab56b2fbfb403d77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  uuid = "0510FBAD-2749-4702-8E3C-BBD7F6B02E99 - ab56b2fbfb403d35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42D3A286-FB01-423F-87B4-0B8E609FA322"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pomodoro/Stats/StatsList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "deleteSession(at:sectionIndex:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "42D3A286-FB01-423F-87B4-0B8E609FA322 - ab56b2fbfb403d16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "42D3A286-FB01-423F-87B4-0B8E609FA322 - ab56b2fbfb403d16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "668">
+               </Location>
+               <Location
+                  uuid = "42D3A286-FB01-423F-87B4-0B8E609FA322 - ab56b2fbfb403dd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DBC91B0-C08F-4EB8-ABBC-A3973840CB3F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pomodoro/Stats/StatsList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "deleteSession(at:sectionIndex:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0DBC91B0-C08F-4EB8-ABBC-A3973840CB3F - ab56b2fbfb403d50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "0DBC91B0-C08F-4EB8-ABBC-A3973840CB3F - ab56b2fbfb403d50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "1092">
+               </Location>
+               <Location
+                  uuid = "0DBC91B0-C08F-4EB8-ABBC-A3973840CB3F - ab56b2fbfb403d16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pomodoro.StatsList.deleteSession(at: Foundation.IndexSet, sectionIndex: Swift.Int) -&gt; ()"
+                  moduleName = "Pomodoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enzogammino/Documents/OpenClassrooms/Projet%2012%20-%20EN%20COURS/Pomodoro/Pomodoro/Stats/StatsList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

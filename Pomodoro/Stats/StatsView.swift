@@ -12,7 +12,7 @@ struct StatsView: View {
                     .foregroundColor(.white)
                     .font(.custom("Avenir Next", size: 20))
                     .bold()
-                StatsRow()
+                StatsList()
             }
         }
     }

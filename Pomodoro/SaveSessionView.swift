@@ -29,7 +29,7 @@ struct SaveSessionView: View {
                     Spacer()
                     if text != "" {
                         ButtonShape(buttonText: "OK", buttonColor: .blue) {
-                            coreDataSore.saveSession(Session(day: date, workTime: 1500, title: text))
+                            coreDataSore.saveSession(Session(day: date, workTime: 1500, title: text.uppercased()))
                             self.presentationMode.wrappedValue.dismiss()
                         }
                     }

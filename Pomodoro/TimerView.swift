@@ -38,7 +38,7 @@ struct TimerView: View {
                     }
                 } else {
                     ButtonShape(buttonText: "START", buttonColor: .green) {
-//                        Analytics.logEvent("start_timer", parameters: nil)
+                        Analytics.logEvent("start_timer", parameters: nil)
                         timer.startTimer()
                     }
                     .padding(.trailing, 10)
@@ -50,7 +50,7 @@ struct TimerView: View {
                 } else {
                     if timer.timerInProgress == false {
                         ButtonShape(buttonText: "SAUVEGARDER", buttonColor: .red) {
-//                            Analytics.logEvent("save_session", parameters: nil)
+                            Analytics.logEvent("save_session", parameters: nil)
                             showSaveSessionView = true
                             timer.startTimer()
                         }
@@ -58,7 +58,7 @@ struct TimerView: View {
                 }
                 if timer.isWorkTimer == false, timer.timerInProgress == true {
                     ButtonShape(buttonText: "PASSER", buttonColor: .red) {
-//                        Analytics.logEvent("skip_restTime", parameters: nil)
+                        Analytics.logEvent("skip_restTime", parameters: nil)
                         timer.stopTimer()
                         timer.workTime = 0
                         timer.changeTimer()
@@ -76,4 +76,4 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
     }
-}
+}	

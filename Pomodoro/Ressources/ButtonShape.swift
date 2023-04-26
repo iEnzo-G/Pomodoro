@@ -42,7 +42,6 @@ struct ButtonShape: View {
 struct ButtonShape_Previews: PreviewProvider {
     static var previews: some View {
         ButtonShape(buttonText: "START", buttonColor: .purple) {
-            print("Work")
         }
     }
 }
