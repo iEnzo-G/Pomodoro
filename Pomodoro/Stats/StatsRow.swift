@@ -3,70 +3,70 @@ import FirebaseAnalytics
 
 struct StatsRow: View {
     
-    var sessions: [Session] = []
+    @State var sessions: [Session] = []
+    @State private var mergedSessions: [String : [Session]] = [:]
     var coreDataStore = CoreDataStore()
-    @State var isTapped = false
-    @State var mergedSessions: [String : [Session]] = [:]
-    
-    var body: some View {
-        VStack {
-            ForEach(mergedSessions.keys.sorted(), id: \.self) { day in
-                Text(day)
-                    .font(.custom("Avenir Next", size: 20))
-                    .onTapGesture {
-                        isTapped.toggle()
-                    }
-            }
-                if isTapped {
-                    HStack {
-                        var hoursFormatter: String {
-                            let formatter = DateFormatter()
-                            formatter.dateFormat = "hh:mm"
-                            return formatter.string(from: sessions[0].day)
-                        }
-                        Text(hoursFormatter)
-                            .font(.custom("Avenir Next", size: 20))
-                        Text("(\(sessions[0].title))")
-                            .font(.custom("Avenir Next", size: 20))
-                        Spacer()
-                        Text("-")
-                            .font(.custom("Avenir Next", size: 20))
-                        Spacer()
-                        Text("\(sessions[0].workTime / 60) min")
-                            .font(.custom("Avenir Next", size: 20))
-                        Button("X") {
-//                            Analytics.logEvent("delete_session", parameters: nil)
-                            coreDataStore.deleteSession(sessions[0])
-                        }
-                        .foregroundColor(.red)
-                        .buttonStyle(.borderless)
-                        .shadow(radius: 1)
-                    }
-                }
-            }
-        .onAppear() {
-            mergedSessions = groupSessionsByDay(sessions: sessions)
-        }
+    private var hoursFormatter: DateFormatter {
+        let hoursFormatter = DateFormatter()
+        hoursFormatter.dateFormat = "HH:mm"
+        return hoursFormatter
     }
     
-    func groupSessionsByDay(sessions: [Session]) -> [String : [Session]] {
+    
+    func groupSessionsByTitle(sessions: [Session]) -> [String: [Session]] {
         let groupedSessions = sessions.reduce(into: [String: [Session]]()) { (result, session) in
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMMM yyyy"
-            dateFormatter.locale = Locale(identifier: "fr")
-            let day = dateFormatter.string(from: session.day)
-            if result[day] == nil {
-                result[day] = [session]
+            let title = session.title
+            if result[title] == nil {
+                result[title] = [session]
             } else {
-                result[day]?.append(session)
+                result[title]?.append(session)
             }
         }
         return groupedSessions
     }
-}
-    struct StatsRow_Previews: PreviewProvider {
-        static var previews: some View {
-            StatsRow(sessions: [Session(day: Date(), workTime: 1500, title: "P12"), Session(day: Date(), workTime: 1500, title: "P11")])
-                .padding()
+    
+    var body: some View {
+        List {
+            ForEach(Array(mergedSessions.keys), id: \.self) { key in
+                Section(header: Text(key)) {
+                    ForEach(mergedSessions[key]!, id: \.self) { session in
+                        HStack {
+                            Text("\(hoursFormatter.string(from: session.day))")
+                            Spacer()
+                            Text("-")
+                            Spacer()
+                            Text("\(session.workTime / 60) minutes")
+                        }
+                    }
+                }
+            }
+            .onDelete(perform: deleteSession)
+        }
+        .onAppear() {
+            sessions = coreDataStore.getSessions()
+            mergedSessions = groupSessionsByTitle(sessions: sessions)
         }
     }
+    
+    func deleteSession(at offsets: IndexSet) {
+        for index in offsets {
+            let session = mergedSessions.flatMap({ $0.value })[index]
+            coreDataStore.deleteSession(session)
+        }
+        mergedSessions = groupSessionsByTitle(sessions: sessions)
+    }
+}
+struct StatsRow_Previews: PreviewProvider {
+    static var previews: some View {
+        StatsRow(sessions: [Session(day: Date(), workTime: 1500, title: "P12"),
+                            Session(day: Date(), workTime: 1500, title: "P09"),
+                            Session(day: Date(), workTime: 1500, title: "P11"),
+                            Session(day: Date(), workTime: 1500, title: "P12"),
+                            Session(day: Date(), workTime: 1500, title: "P10"),
+                            Session(day: Date(), workTime: 1500, title: "P11"),
+                            Session(day: Date(), workTime: 1500, title: "P12")])
+        .padding()
+    }
+}
+
+
